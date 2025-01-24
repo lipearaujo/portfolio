@@ -35,14 +35,9 @@ const Form = () => {
     };
 
     emailjs
-      .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
-        templateParams,
-        {
-          publicKey: "49oKEOE_wg1VcGQmL",
-        }
-      )
+      .send("service_nixtw13", "template_hq8pta5", templateParams, {
+        publicKey: "49oKEOE_wg1VcGQmL",
+      })
       .then(
         () => {
           alert("Email Enviado!");
