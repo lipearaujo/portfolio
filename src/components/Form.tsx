@@ -11,6 +11,8 @@ const Form = () => {
     message: "",
   });
 
+  console.log(process.env.NEXT_PUBLIC_KEY);
+
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
