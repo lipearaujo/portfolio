@@ -11,6 +11,8 @@ const Form = () => {
     message: "",
   });
 
+  console.log(process.env.NEXT_PUBLIC_SERVICE_ID as string);
+  console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID as string);
   console.log(process.env.NEXT_PUBLIC_KEY);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
