@@ -9,6 +9,7 @@ import "swiper/css/effect-fade";
 import { motion } from "framer-motion";
 
 import { FaGithub } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa6";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -28,6 +29,7 @@ const projects = [
       { stack: "SQLite" },
     ],
     githubLink: "https://github.com/lipearaujo/nestEcomm",
+    liveCode: "",
     image: "/assets/NestEcomm.png",
   },
   {
@@ -37,6 +39,7 @@ const projects = [
       "Uma API desenvolvida com base no serviço online de streaming Netflix que faz requisições para uma base de dados gratuita e de código aberto sobre filmes e séries de TV chamada TMDb (The Movie Database) utilizando ReactJS e Axios.",
     tecnologies: [{ stack: "React.js" }, { stack: "Css3" }, { stack: "Axios" }],
     githubLink: "https://github.com/lipearaujo/movieAPI",
+    liveCode: "",
     image: "/assets/MovieAPI.PNG",
   },
   {
@@ -49,6 +52,7 @@ const projects = [
       { stack: "Express" },
     ],
     githubLink: "https://github.com/lipearaujo/React-Node/tree/master/chat-app",
+    liveCode: "",
     image: "/assets/Chat.png",
   },
   /*   {
@@ -118,10 +122,15 @@ const Services = (props: Props) => {
                 })}
               </ul>
               <div className="border border-white/20"></div>
-              <div>
+              <div className="flex gap-4">
                 <Link href={project.githubLink}>
                   <div className="w-[70px] h-[70px] bg-[#272627] rounded-full flex items-center justify-center">
                     <FaGithub className="text-3xl hover:text-[#42ffa0]" />
+                  </div>
+                </Link>
+                <Link href={project.liveCode}>
+                  <div className="w-[70px] h-[70px] bg-[#272627] rounded-full flex items-center justify-center">
+                    <FaLocationArrow className="text-3xl hover:text-[#42ffa0]" />
                   </div>
                 </Link>
               </div>
