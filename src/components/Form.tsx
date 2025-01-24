@@ -40,7 +40,7 @@ const Form = () => {
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         templateParams,
         {
-          publicKey: process.env.NEXT_PUBLIC_KEY,
+          publicKey: process.env.NEXT_PUBLIC_KEY as string,
         }
       )
       .then(
