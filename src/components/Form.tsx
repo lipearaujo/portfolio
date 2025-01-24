@@ -39,12 +39,10 @@ const Form = () => {
         process.env.NEXT_PUBLIC_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         templateParams,
-        {
-          publicKey: process.env.NEXT_PUBLIC_KEY as string,
-        }
+        process.env.NEXT_PUBLIC_KEY as string
       )
       .then(
-        (response) => {
+        () => {
           alert("Email Enviado!");
 
           setFormValues({
