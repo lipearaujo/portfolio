@@ -29,7 +29,7 @@ const projects = [
       { stack: "SQLite" },
     ],
     githubLink: "https://github.com/lipearaujo/nestEcomm",
-    liveCode: "",
+    liveCode: "https://nest-ecomm-54ny.vercel.app/",
     image: "/assets/NestEcomm.png",
   },
   {
@@ -39,7 +39,7 @@ const projects = [
       "Uma API desenvolvida com base no serviço online de streaming Netflix que faz requisições para uma base de dados gratuita e de código aberto sobre filmes e séries de TV chamada TMDb (The Movie Database) utilizando ReactJS e Axios.",
     tecnologies: [{ stack: "React.js" }, { stack: "Css3" }, { stack: "Axios" }],
     githubLink: "https://github.com/lipearaujo/movieAPI",
-    liveCode: "",
+    liveCode: "https://movie-api-nine-wheat.vercel.app/",
     image: "/assets/MovieAPI.PNG",
   },
   {
