@@ -52,7 +52,7 @@ const projects = [
       { stack: "Express" },
     ],
     githubLink: "https://github.com/lipearaujo/React-Node/tree/master/chat-app",
-    liveCode: "",
+    liveCode: "https://chat-app-mdee.vercel.app/",
     image: "/assets/Chat.png",
   },
   /*   {
