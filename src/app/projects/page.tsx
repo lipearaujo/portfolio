@@ -18,6 +18,16 @@ import ButtonSlide from "@/components/ButtonSlide";
 const projects = [
   {
     id: "01",
+    title: "Movie API",
+    description:
+      "Uma API desenvolvida com base no serviço online de streaming Netflix que faz requisições para uma base de dados gratuita e de código aberto sobre filmes e séries de TV chamada TMDb (The Movie Database) utilizando ReactJS e Axios.",
+    tecnologies: [{ stack: "React.js" }, { stack: "Css3" }, { stack: "Axios" }],
+    githubLink: "https://github.com/lipearaujo/movieAPI",
+    liveCode: "https://movie-api-nine-wheat.vercel.app/",
+    image: "/assets/MovieAPI.PNG",
+  },
+  {
+    id: "02",
     title: "Nest E-commerce",
     description:
       "Um E-commerce completo com cadastro, login e autenticação utilizando NextJS, NestJS, Prisma e SQLite. Os produtos são capturados através de um banco de dados podendo ser filtrados. Para a autenticação foi utilizado o serviço JWT. ",
@@ -29,18 +39,8 @@ const projects = [
       { stack: "SQLite" },
     ],
     githubLink: "https://github.com/lipearaujo/nestEcomm",
-    liveCode: "https://nest-ecomm-54ny.vercel.app/",
+    liveCode: "",
     image: "/assets/NestEcomm.png",
-  },
-  {
-    id: "02",
-    title: "Movie API",
-    description:
-      "Uma API desenvolvida com base no serviço online de streaming Netflix que faz requisições para uma base de dados gratuita e de código aberto sobre filmes e séries de TV chamada TMDb (The Movie Database) utilizando ReactJS e Axios.",
-    tecnologies: [{ stack: "React.js" }, { stack: "Css3" }, { stack: "Axios" }],
-    githubLink: "https://github.com/lipearaujo/movieAPI",
-    liveCode: "https://movie-api-nine-wheat.vercel.app/",
-    image: "/assets/MovieAPI.PNG",
   },
   {
     id: "03",
@@ -52,24 +52,9 @@ const projects = [
       { stack: "Express" },
     ],
     githubLink: "https://github.com/lipearaujo/React-Node/tree/master/chat-app",
-    liveCode: "https://chat-app-mdee.vercel.app/",
+    liveCode: "",
     image: "/assets/Chat.png",
   },
-  /*   {
-    id: "04",
-    title: "Task App",
-    description:
-      "Aplicativo para gerenciar tarefas diárias utilizando React Native e Postgres.",
-    tecnologies: [
-      { stack: "Recat Native" },
-      { stack: "Tailwind" },
-      { stack: "Prisma" },
-      { stack: "Postgres" },
-      { stack: "Fastify" },
-    ],
-    githubLink: "https://www.github.com/lipearaujo",
-    image: "",
-  }, */
 ];
 
 type Props = {};
@@ -128,11 +113,15 @@ const Services = (props: Props) => {
                     <FaGithub className="text-3xl hover:text-[#42ffa0]" />
                   </div>
                 </Link>
-                <Link href={project.liveCode}>
-                  <div className="w-[70px] h-[70px] bg-[#272627] rounded-full flex items-center justify-center">
-                    <FaLocationArrow className="text-3xl hover:text-[#42ffa0]" />
-                  </div>
-                </Link>
+                {project.liveCode !== "" ? (
+                  <Link href={project.liveCode}>
+                    <div className="w-[70px] h-[70px] bg-[#272627] rounded-full flex items-center justify-center">
+                      <FaLocationArrow className="text-3xl hover:text-[#42ffa0]" />
+                    </div>
+                  </Link>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
