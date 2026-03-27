@@ -28,7 +28,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row items-center gap-8">
               <Link
-                href="/documents/resume.pdf"
+                href="/documents/curriculo_Filipe_Araujo.pdf"
                 className="uppercase text-[#42ffa0] font-[500] flex items-center gap-2 px-8 py-4 border border-[#42ffa0] rounded-full hover:text-[#121012] hover:bg-[#42ffa0] hover:transition-all duration-500"
               >
                 Download CV
