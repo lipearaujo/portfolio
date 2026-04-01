@@ -59,11 +59,39 @@ const education = [
         title: "Engenharia de Computação",
         institute: "UFGD",
       },
-      { year: "2020", title: "Front-End", institute: "Danki Code" },
-      { year: "2021", title: "React.JS", institute: "Coder" },
+      {
+        year: "2020",
+        title: "Javascript Development",
+        institute: "Danki Code",
+      },
+      { year: "2020", title: "React.js Development", institute: "Coder" },
       { year: "2021", title: "Full-Stack Web", institute: "Danki Code" },
-      { year: "2022", title: "Ignite Lab", institute: "Rocketseat" },
-      { year: "2023", title: "NLW IA", institute: "Rocketseat" },
+      { year: "2021", title: "Database Fundamentals", institute: "Danki Code" },
+      {
+        year: "2022",
+        title: "Web Development",
+        institute: "Digital Innovation One",
+      },
+    ],
+  },
+];
+
+const highlights = [
+  {
+    title: "No que me destaco",
+    highlightsCard: [
+      {
+        title: "Experiência prática com aplicações Full Stack completas",
+      },
+      {
+        title: "",
+      },
+      {
+        title: "",
+      },
+      {
+        title: "",
+      },
     ],
   },
 ];
@@ -90,7 +118,7 @@ const About = (props: Props) => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-[60px] sm:items-start sm:justify-start">
           <div className="max-w-[380px] flex flex-col gap-6">
             <h1 className="text-4xl font-bold">Por quê me contratar ?</h1>
-            <p className=" text-white/50 text-center sm:text-left">
+            <p className=" text-white/50 text-center sm:text-left flex flex-col gap-2">
               Tenho certeza que possuo as qualificações necessárias para
               desenvolver o que você procura.
             </p>
@@ -120,7 +148,7 @@ const About = (props: Props) => {
                     className={toggleState === 3 ? "btn clicked" : "btn"}
                     onClick={() => setBtnValue("Skills")}
                   >
-                    Skills
+                    Tecnologias
                   </button>
                 </div>
 
@@ -147,6 +175,7 @@ const About = (props: Props) => {
                       className="w-full flex flex-col gap-6 text-center sm:text-left"
                     >
                       <h1 className="text-3xl font-bold">{about.title}</h1>
+
                       <div className="flex flex-col gap-6 sm:grid sm:grid-flow-col sm:grid-rows-3 mt-11">
                         <div className="flex items-center justify-center gap-4 sm:justify-start">
                           <span className="text-white/50">Nome</span>
@@ -172,6 +201,29 @@ const About = (props: Props) => {
                           <span className="text-white/50">Idiomas</span>
                           <p className="text-[18px]">{about.languages}</p>
                         </div>
+                      </div>
+
+                      <div className="mt-5">
+                        <h2 className="text-[#42ffa0] italic font-bold text-2xl">
+                          Diferenciais
+                        </h2>
+                        <ul className="list-inside list-disc marker:text-[#42ffa0] text-center sm:text-left sm:grid sm:grid-cols-2 flex flex-col  gap-6">
+                          <li>
+                            Experiência prática com aplicações Full Stack
+                            completas
+                          </li>
+                          <li>
+                            Conhecimento em autenticação e segurança com JWT
+                          </li>
+                          <li>
+                            Projetos com arquitetura próxima ao ambiente
+                            profissional
+                          </li>
+                          <li>
+                            Facilidade de aprendizado e adaptação a novas
+                            tecnologias
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   );

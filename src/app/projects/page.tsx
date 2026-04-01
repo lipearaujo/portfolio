@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
-import "swiper/css/effect-fade";
-
 import { motion } from "framer-motion";
 
 import { FaGithub } from "react-icons/fa";
@@ -18,9 +16,9 @@ import ButtonSlide from "@/components/ButtonSlide";
 const projects = [
   {
     id: "01",
-    title: "Movie API",
+    title: "API estilo Netflix (integração com TMDb)",
     description:
-      "Uma API desenvolvida com base no serviço online de streaming Netflix que faz requisições para uma base de dados gratuita e de código aberto sobre filmes e séries de TV chamada TMDb (The Movie Database) utilizando ReactJS e Axios.",
+      "Desenvolvi uma aplicação web inspirada em serviços de streaming, utilizando ReactJS, CSS3 e Axios para consumo da API do TMDb, permitindo navegação dinâmica e exibição de filmes e séries em tempo real.",
     tecnologies: [{ stack: "React.js" }, { stack: "Css3" }, { stack: "Axios" }],
     githubLink: "https://github.com/lipearaujo/movieAPI",
     liveCode: "https://movie-api-nine-wheat.vercel.app/",
@@ -28,9 +26,10 @@ const projects = [
   },
   {
     id: "02",
-    title: "Nest E-commerce",
-    description:
-      "Um E-commerce completo com cadastro, login e autenticação utilizando NextJS, NestJS, Prisma e SQLite. Os produtos são capturados através de um banco de dados podendo ser filtrados. Para a autenticação foi utilizado o serviço JWT. ",
+    title: "E-commerce Full Stack (Next.js + NestJS)",
+    description: `Implementei um sistema completo de e-commerce com Next.js, NestJS, Prisma e SQLite, incluindo autenticação com JWT e CRUD de usuários e produtos. 
+    Adicionei filtros de produtos e estrutura escalável de backend, simulando aplicações reais de mercado.
+    `,
     tecnologies: [
       { stack: "Next.js" },
       { stack: "Nest" },
@@ -44,8 +43,10 @@ const projects = [
   },
   {
     id: "03",
-    title: "Chat App",
-    description: "Aplicativo de chat ao vivo utilizando Socket.",
+    title: "E-commerce Full Stack (Next.js + Node.js)",
+    description: `Desenvolvi um e-commerce com arquitetura full stack utilizando Next.js, Node.js, Prisma e SQLite, implementando autenticação JWT, paginação e filtros de produtos.
+    Estruturei o backend para suportar operações eficientes e navegação otimizada.
+    `,
     tecnologies: [
       { stack: "React.js" },
       { stack: "Css" },
@@ -55,25 +56,23 @@ const projects = [
     liveCode: "",
     image: "/assets/Chat.png",
   },
+  {
+    id: "04",
+    title: "Aplicação de Bloco de Notas (CRUD)",
+    description:
+      "Criei uma aplicação de gerenciamento de notas utilizando ReactJS, CSS3 e MySQL, permitindo criação, edição e exclusão de registros de forma eficiente.",
+    tecnologies: [{ stack: "React.js" }, { stack: "Css" }, { stack: "MySQL" }],
+    githubLink:
+      "https://github.com/lipearaujo/React-Node/tree/master/notepadMySQL",
+    liveCode: "",
+    image: "/assets/Chat.png",
+  },
 ];
 
 type Props = {};
 
 const Services = (props: Props) => {
   const [project, setProject] = useState(projects[0]);
-  const swiper = useSwiper();
-
-  useEffect(() => {
-    fetchGitHub();
-  });
-
-  const fetchGitHub = async () => {
-    const response = await fetch(
-      "https://api.github.com/users/lipearaujo/repos"
-    );
-    const data = response.json();
-    console.log(data);
-  };
 
   const handleSlideChange = (index: any) => {
     const currentIndex = index.activeIndex;
