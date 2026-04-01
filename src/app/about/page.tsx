@@ -16,7 +16,7 @@ const aboutMe = [
     experience: "1 Ano",
     phone: "(+55) 67 99977-3545",
     github: "github.com/lipearaujo",
-    email: "filipecensi@hotmail.com",
+    email: "lipecensi@gmail.com",
     languages: "Português, Inglês",
   },
 ];

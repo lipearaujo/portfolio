@@ -18,12 +18,13 @@ export default function Home() {
               <span className="text-[#42ffa0]">Filipe Araujo</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 font-[300]">
-              Bacharel em Engenharia de Computação pela Universidade Federal da
-              Grande Dourados - UFGD com interesse pela área de Desenvolvimento
-              Web. Na faculdade despertei o interesse pela programação,
-              especialmente pelas tecnologias utilizadas no desenvolvimento de
-              aplicações web e mobile e desde então venho me aperfeiçoando nessa
-              área.
+              Desenvolvedor Web formado em Engenharia de Computação pela UFGD,
+              com experiência em desenvolvimento de aplicações Full Stack
+              utilizando Javascript, React, Next.js e Node.js. Possui forte base
+              em construção de APIs, autenticação com JWT e manipulação de banco
+              de dados SQL/NoSQL. Focado em escrever código limpo, escalável e
+              orientado a resultados, com projetos práticos que simulam
+              aplicações reais de mercado.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-8">
