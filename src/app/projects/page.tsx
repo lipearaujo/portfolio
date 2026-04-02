@@ -48,9 +48,10 @@ const projects = [
     Estruturei o backend para suportar operações eficientes e navegação otimizada.
     `,
     tecnologies: [
-      { stack: "React.js" },
-      { stack: "Css" },
-      { stack: "Express" },
+      { stack: "Next.js" },
+      { stack: "Node.JS" },
+      { stack: "Prisma" },
+      { stack: "SQLite" },
     ],
     githubLink: "",
     liveCode: "",

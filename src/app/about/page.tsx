@@ -3,7 +3,14 @@ import React, { useState } from "react";
 
 import { FaReact, FaJs, FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa"; //react
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiNestjs,
+  SiMysql,
+  SiMongodb,
+  SiPrisma,
+} from "react-icons/si";
 
 import { motion } from "framer-motion";
 
@@ -38,7 +45,7 @@ const skills = [
   {
     title: "Minhas Habilidades",
     skillsIcons: [
-      { icon: <FaReact />, tooltip: "reacj.js" },
+      { icon: <FaReact />, tooltip: "react.js" },
       { icon: <SiNextdotjs />, tooltip: "next.js" },
       { icon: <FaJs />, tooltip: "javascript" },
       { icon: <FaNodeJs />, tooltip: "node.js" },
@@ -46,6 +53,10 @@ const skills = [
       { icon: <FaCss3 />, tooltip: "css3" },
       { icon: <SiTailwindcss />, tooltip: "tailwind" },
       { icon: <BiLogoPostgresql />, tooltip: "postgres" },
+      { icon: <SiNestjs />, tooltip: "nest.js" },
+      { icon: <SiMysql />, tooltip: "mysql" },
+      { icon: <SiMongodb />, tooltip: "mongodb" },
+      { icon: <SiPrisma />, tooltip: "prisma.io" },
     ],
   },
 ];
@@ -71,26 +82,6 @@ const education = [
         year: "2022",
         title: "Web Development",
         institute: "Digital Innovation One",
-      },
-    ],
-  },
-];
-
-const highlights = [
-  {
-    title: "No que me destaco",
-    highlightsCard: [
-      {
-        title: "Experiência prática com aplicações Full Stack completas",
-      },
-      {
-        title: "",
-      },
-      {
-        title: "",
-      },
-      {
-        title: "",
       },
     ],
   },
@@ -175,8 +166,31 @@ const About = (props: Props) => {
                       className="w-full flex flex-col gap-6 text-center sm:text-left"
                     >
                       <h1 className="text-3xl font-bold">{about.title}</h1>
+                      <div className="flex flex-col gap-5">
+                        <p>
+                          Sou desenvolvedor Full Stack com foco no ecossistema
+                          JavaScript, atuando no desenvolvimento de aplicações
+                          completas que envolvem frontend, backend e banco de
+                          dados.
+                        </p>
+                        <p>
+                          Tenho experiência na construção de sistemas com
+                          autenticação, APIs REST e integração com banco de
+                          dados utilizando Prisma, MySQL e SQLite.
+                        </p>
+                        <p>
+                          Meus projetos simulam aplicações reais de mercado,
+                          incluindo e-commerces completos, sistemas com
+                          paginação e filtros, e integração com APIs externas.
+                        </p>
+                        <p>
+                          Busco oportunidades como desenvolvedor Full Stack ou
+                          Backend, onde eu possa aplicar minhas habilidades e
+                          evoluir tecnicamente.
+                        </p>
+                      </div>
 
-                      <div className="flex flex-col gap-6 sm:grid sm:grid-flow-col sm:grid-rows-3 mt-11">
+                      <div className="flex flex-col gap-6 sm:grid sm:grid-flow-col sm:grid-rows-3 mt-4">
                         <div className="flex items-center justify-center gap-4 sm:justify-start">
                           <span className="text-white/50">Nome</span>
                           <p className="text-[18px]">{about.name}</p>
