@@ -52,9 +52,9 @@ const projects = [
       { stack: "Css" },
       { stack: "Express" },
     ],
-    githubLink: "https://github.com/lipearaujo/React-Node/tree/master/chat-app",
+    githubLink: "",
     liveCode: "",
-    image: "/assets/Chat.png",
+    image: "/assets/eCommerceNextNode.png",
   },
   {
     id: "04",
@@ -65,7 +65,7 @@ const projects = [
     githubLink:
       "https://github.com/lipearaujo/React-Node/tree/master/notepadMySQL",
     liveCode: "",
-    image: "/assets/Chat.png",
+    image: "/assets/notesApp.png",
   },
 ];
 
